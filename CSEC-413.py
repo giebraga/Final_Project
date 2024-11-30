@@ -17,3 +17,20 @@ class ModelingSimulationApp:
             page_icon="🔬",
             layout="wide"
         )
+        # Initialize session state for data
+        if 'generated_data' not in st.session_state:
+            st.session_state.generated_data = None
+        
+    def introduction_page(self):
+        """
+        Project introduction and overview page
+        """
+        st.title("🧪 Modeling and Simulation Project")
+        
+        # Introduction section
+        st.header("Project Introduction")
+        st.markdown("""
+        This interactive application demonstrates a comprehensive workflow for 
+        **Modeling and Simulation using Python**. The goal is to provide 
+        hands-on experience with powerful Python libraries and data science techniques.
+        """)
