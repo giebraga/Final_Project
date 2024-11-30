@@ -34,3 +34,21 @@ class ModelingSimulationApp:
         **Modeling and Simulation using Python**. The goal is to provide 
         hands-on experience with powerful Python libraries and data science techniques.
         """)
+
+         # Project steps overview
+        st.header("Project Workflow Steps")
+        steps = [
+            "**Data Generation**: Create synthetic data mimicking real-world scenarios",
+            "**Exploratory Data Analysis (EDA)**: Investigate data characteristics",
+            "**Modeling**: Apply appropriate machine learning techniques",
+            "**Simulation**: Generate predictive outcomes",
+            "**Evaluation**: Assess model performance and reliability"
+        ]
+        
+        for step in steps:
+            st.markdown(f"- {step}")
+        
+        st.info("""
+        🔍 This application will guide you through each step of the modeling 
+        and simulation process, demonstrating key data science concepts and techniques.
+        """)
